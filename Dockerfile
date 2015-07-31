@@ -12,7 +12,7 @@ ADD entrypoint.sh /entrypoint.sh
 RUN chmod a+rx /entrypoint.sh     
 VOLUME ["/www", "/target"]
 WORKDIR /www
-EXPOSE 80
+# EXPOSE 80
 
 ENTRYPOINT ["/entrypoint.sh"]
 
