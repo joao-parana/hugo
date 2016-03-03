@@ -7,7 +7,7 @@ echo "Você invocou com os seguintes parâmetros: $@"
 if [ "$1" = 'bash' ]; then
     echo 'Executando a bash.'
     echo ' '
-    echo 'Você pode invocar HUGO como no exemplo abaixo:'
+    echo 'Você pode invocar HUGO como no exemplo abaixo, para que ele gere os fontes em /target:'
     echo ' '
     echo '/usr/bin/hugo \\'
     echo '  --theme=hyde \\'
@@ -18,6 +18,11 @@ if [ "$1" = 'bash' ]; then
     echo 'Lembre-se de colocar os fontes do site, (incluindo o tema usado) em /www '
     echo 'Você pode usar Volumes para /www e para /target '
     echo ' '
+    echo 'Para rodar o Contêiner use :'
+    echo ' '
+    echo 'hugo server --bind="0.0.0.0"'
+    echo ' '
+
     /bin/bash $2 $3 $4 $5 $6 $7 $8 $9
     exit 0
 fi
