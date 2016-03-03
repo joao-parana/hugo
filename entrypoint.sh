@@ -1,4 +1,7 @@
 #!/bin/sh
+
+set -e 
+
 /usr/bin/hugo \
   --theme=hyde \
   --buildDrafts \
@@ -13,10 +16,6 @@ do
     -d="/target" > /dev/null
   sleep 1
 done
-
-
-
-
 
 # /usr/bin/hugo server \
 #   --theme=hyde \

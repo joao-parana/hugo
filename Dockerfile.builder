@@ -17,5 +17,5 @@ ENV GOOS          linux
 CMD ["/build.sh"]
 
 # Run this command in a Shell
-# docker build -t parana/hugo -F Dockerfile.builder . 
-# docker run  -v ~/Desktop/Development/hugo/bin:/go/bin parana/hugo
+# docker build -t parana/hugo-debian-64-builder -F Dockerfile.builder . 
+# docker run  -v ~/Desktop/Development/hugo/bin:/go/bin parana/hugo-debian-64-builder

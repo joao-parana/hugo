@@ -1,4 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e 
+
 # cd /bin
 # ls -lA .
 echo 'Iniciando instalação do Hugo'
