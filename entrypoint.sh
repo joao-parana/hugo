@@ -2,6 +2,14 @@
 
 set -e 
 
+echo ". . . . HUGO Statice Web Site Generator . . . ."
+echo "Você invocou com os seguintes parâmetros: $@"
+if [ "$1" = 'bash' ]; then
+    echo "Executando a bash"
+    /bin/bash $2 $3 $4 $5 $6 $7 $8 $9
+    exit 0
+fi
+
 /usr/bin/hugo \
   --theme=hyde \
   --buildDrafts \
